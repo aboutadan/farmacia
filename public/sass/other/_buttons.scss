@@ -1,0 +1,142 @@
+.button, 
+button.button {
+    outline: none;
+    padding: 5px 25px;
+    text-align: center;
+    border-radius: 3px;
+    border-top: none; 
+    border-left: none; 
+    border-right: none;
+    display: inline-block;
+    font-size: $fontNormal !important;
+        
+    &.green {
+        background-color: $green;
+        color: $white;
+        border-bottom: darken($green, 20%) solid 3px;
+
+        &:hover {
+            background-color: darken($green, 5%);
+            border-bottom: darken($green, 25%) solid 3px;
+            transition: 0.3s;
+        }
+
+        &.auto {
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        &.small {
+            padding: 2px 15px;
+            color: $white; 
+            width: auto !important;
+        }
+        
+    }
+    
+    &.blue {
+        background-color: $blue;
+        border-bottom: darken($blue, 20%) solid 3px;
+        color: $white;
+        transition: 300ms; 
+        
+        &:hover {
+            background-color: darken($blue, 5%);
+            border-bottom: darken($blue, 25%) solid 3px;
+        }
+        
+        &.disable {
+            background-color: rgba($blue, 0.5); 
+            border-bottom: rgba(darken($blue, 25%), 0.5) solid 3px;
+            color: rgba($white, 0.7);
+        }
+
+        &.short {
+            padding-left: 10px; 
+            padding-right: 10px;
+        }
+
+        &.small {
+            padding: 2px 15px;
+            color: $white; 
+            width: auto !important;
+        }
+
+    }
+    
+    &.red {
+        background-color: $red;
+        border-bottom: darken($red, 20%) solid 3px;
+        color: $white;
+        transition: 300ms; 
+        
+        &:hover {
+            background-color: darken($red, 5%);
+            border-bottom: darken($red, 25%) solid 3px;
+        }
+
+        &.short {
+            padding-left: 10px; 
+            padding-right: 10px;
+        }
+
+        &.small {
+            padding: 2px 15px;
+            color: $white; 
+            width: auto !important;
+        }
+        
+    }
+    
+}
+
+.link {
+    font-style: none;
+
+    &.green {
+        padding: 7px; 
+        color: $green; 
+        border: none; 
+        display: inline-block;
+    }
+
+    &.red {
+        padding: 7px;
+        color: $red;
+        border: none;
+        display: inline-block;
+    }
+}
+
+a.button {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.button + .button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#remove {
+    display: none;
+}
+
+
+.button_container {
+    text-align: right;
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .button_container {
+        text-align: center; 
+        margin-top: 1em;
+    }    
+
+    .button + .button {
+        margin-top: 1em;    
+    }
+}

@@ -1,0 +1,71 @@
+/** Colors **/
+/** Please try and keep them alphabetically **/
+
+$black: #000000; 
+
+$blue: #34495E;
+$blue-light: lighten($blue, 10%);
+$blue-bg: lighten($blue, 70%);
+$blue-hover: #3498DB;
+
+$gray-darker: lighten($black, 45%);
+$gray-dark: lighten($black, 65%);
+$gray: lighten($black, 60%);
+$gray-light: lighten($black, 75%);
+$gray-lighter: lighten($black, 90%);
+
+$green: #3FC380;
+
+$orange: #EB9532;
+
+$red: #EC644B;
+
+$white: #ffffff;
+
+/** Font Sizes **/
+$fontSmall: 1.1rem;
+$fontNormal: 1.3rem;
+$fontLarge: 1.5rem;
+
+html {
+    font-size: 10px;
+}
+
+body {
+	width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #f9f9f9;
+    color: $gray;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 300;
+}
+
+@import 'other/_fonts';
+@import 'other/_standard';
+@import 'other/_dark-layout';
+@import 'other/_mixins';
+@import 'other/_side-menu';
+@import 'other/_nav';
+@import 'other/_forms';
+@import 'other/_buttons';
+@import 'other/_modals';
+@import 'other/_alerts';
+@import 'other/_overlay';
+@import 'other/_errors';
+
+footer {
+    position: fixed; 
+    width: 100%;
+    bottom: 0px;
+    text-align: center; 
+    color: $gray-light;
+    padding: 5px;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+

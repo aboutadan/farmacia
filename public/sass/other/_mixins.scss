@@ -1,0 +1,35 @@
+@mixin transitions($value) {
+    -webkit-transition: all $value ease-in-out;
+    -moz-transition: all $value ease-in-out;
+    -ms-transition: all $value ease-in-out;
+    -o-transition: all $value ease-in-out;
+    transition: all $value ease-in-out;
+}
+
+@mixin transitions_custom($property, $value) {
+	-webkit-transition: $property $value ease-in-out;
+    -moz-transition: $property $value ease-in-out;
+    -ms-transition: $property $value ease-in-out;
+    -o-transition: $property $value ease-in-out;
+    transition: $property $value ease-in-out;
+}
+
+@mixin placeholders() {
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  @content;
+	}
+	
+	&::-moz-placeholder { /* Firefox 19+ */
+	  @content;
+	}
+	
+	&:-ms-input-placeholder { /* IE 10+ */
+	  @content;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+	  @content;
+	}
+
+}

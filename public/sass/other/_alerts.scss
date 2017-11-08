@@ -1,0 +1,20 @@
+.alert-success {
+	background-color: $green;
+	border: none;
+	color: $white !important;
+	margin-bottom: 1em;
+}
+
+.alert-warning {
+	background-color: $orange;
+	border: none;
+	color: $white !important;
+	margin-bottom: 1em;
+}
+
+.alert-danger {
+	background-color: $red;
+	border: none;
+	color: $white !important;
+	margin-bottom: 1em;
+}
