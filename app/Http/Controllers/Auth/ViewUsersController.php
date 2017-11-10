@@ -89,7 +89,7 @@ class ViewUsersController extends Controller
 		if(!$update):
         	$error = [
 	        	'type' => 'danger', 
-	        	'message'	=> '¡Uh-oh, algo salio mal! Intenta nuevamente. Si el error persiste, avisar al administrador.'
+	        	'message'	=> '¡Uh-oh, algo salio mal! Intente nuevamente. Si el error persiste, avise al administrador.'
 	        ];
         	return redirect()->back()->with($error)->withInput();
         else:

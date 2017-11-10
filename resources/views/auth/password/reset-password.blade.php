@@ -11,7 +11,7 @@
 				</div>
 				<div class="row form default">
 					<div class="col-xs-12">
-						<p>Ingresa los siguientes datos para cambiar tu contraseña.</p>
+						<p>Ingrese los siguientes datos para cambiar su contraseña.</p>
 						<form method="post" action="{{ asset('password/reset') }}">
 
 							{{ csrf_field() }}
@@ -34,8 +34,8 @@
 								@endforeach
 							@endif
 							<div class="col-sm-12 pad-0">
-								<p class="small">* La contraseña debe ser entre 6 y 30 caracteres.<br />
-								 				 * La contraseña debe tener al menos un número.</p>
+								<p class="small">* La contraseña debe contener entre 6 y 30 caracteres.<br />
+								 				 * La contraseña debe contener al menos un número.</p>
 							</div>
 
 							<div class="col-xs-12 button_container">

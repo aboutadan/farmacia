@@ -8,7 +8,7 @@
 		<div class="col-xs-12 col-sm-6 col-sm-offset-3 banner center">
 			<span>503</span>
 			<p>
-				Servicio No Disponible: El servidor está temporalmente ocupado, intenta más tarde.
+				Servicio No Disponible: El servidor está temporalmente ocupado, intente más tarde.
 				<br /><br />
 				<a id="back" href="javascript:void(0);"><i class="fa fa-arrow-left" aria-hidden="true"></i> Regresar</a>
 				| <a href="{{ asset('/') }}"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>

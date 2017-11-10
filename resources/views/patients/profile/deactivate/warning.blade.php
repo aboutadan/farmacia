@@ -5,7 +5,7 @@
 
     <div class="col-sm-12">
         <span class="icon document"></span>
-        <p class="justify">Este perfil tiene {{ $count === 1 ? $count.' receta médica.': $count.' recetas médicas.' }} Debido a esto, solamente se puede desactivar el perfil en caso de que este duplicado. Antes de poder desactivar la cuenta, las recetas se tienen que asociar con el prefil correcto. Indica el número de identificación del perfil:</p>
+        <p class="justify">Este perfil tiene {{ $count === 1 ? $count.' receta médica.': $count.' recetas médicas.' }} Debido a esto, solamente se puede desactivar el perfil en caso de que este duplicado. Antes de poder desactivar la cuenta, las recetas se tienen que asociar con el prefil correcto. Indique el número de identificación del perfil:</p>
     </div>
 
 	<div class="col-sm-6 col-sm-offset-3">

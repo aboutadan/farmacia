@@ -39,18 +39,12 @@
 				</div>
 			@endif
 	    	@yield('content')
-    	</div>
-    	<div class="size-indicator col-xs-12">
-			<span class="label label-default visible-xs-inline">Extra Small (<768px)</span>
-			<span class="label label-primary  visible-sm-inline">Small (≥768px)</span>
-			<span class="label label-success visible-md-inline">Medium (≥992px)</span>
-			<span class="label label-info visible-lg-inline">Large (≥1200px)</span>
-		</div>
-    
+    	</div>    
 	</div>
 	@yield('other')
 
 	<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script> {{-- Script provided by Laravel (includes jquery) --}}
+	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script> {{-- Bootstrap Script --}}
 	<script type="text/javascript" src="{{ asset('js/main.js') }}"></script> {{-- This is my custom js --}}
 	{{-- Custom Scripts --}}
 	@yield('custom_script')

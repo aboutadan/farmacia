@@ -25,7 +25,7 @@
 					@endif
 				@endforeach
 				<div class="col-xs-12 marTop-1">
-					<p>* Si los resultados no están relacionados, da clic en 'Continuar' para crear la nueva cuenta.</p>
+					<p>* Si los resultados no están relacionados, de clic en 'Continuar' para crear la nueva cuenta.</p>
 				</div>				
 				<div class="col-xs-12 marTop-1 right">
 					<a id="add_account" href="javascript:void(0);" class="button green">Continuar</a>
@@ -83,8 +83,8 @@
 
 							{{ place_input('email', 'Correo Electrónico', old('email'), array('type' => 'email')) }}
 
-			                <p class="small justify marTop-1">* En caso de no contar con alguno de estos datos, solo dejar el campo <strong>vacio</strong>. 
-			                Como buena practica, es sugerible obtener algun número de contact por si es necesario 
+			                <p class="small justify marTop-1">* En caso de no contar con alguno de estos datos, deje el campo <strong>vacio</strong>. 
+			                Como buena práctica, es sugerible obtener algun número de contacto en caso de ser necesario 
 			                comunicarse con el paciente.</p>
 						</div>
 					</div> {{-- End of Info de Contacto --}}
@@ -104,8 +104,8 @@
 
 							{{ place_textarea('alertas', 'Alertas', old('alertas')) }}
 
-			                <p class="small justify marTop-1">* El campos 'Alertas' estara disponible en al imprimir la receta medica. Debido a esto, el campo esta limitado a 100 caracteres.<br />
-			                * Datos estaran disponibles al crear receta medica.</p>
+			                <p class="small justify marTop-1">* El campos 'Alertas' estara disponible en al imprimir la receta médica. Debido a esto, el campo esta limitado a 100 caracteres.<br />
+			                * Este dato estará disponible al crear la receta médica.</p>
 						</div>
 					</div> {{-- End of Campos Adicionales --}}
 					
@@ -116,7 +116,7 @@
 									@foreach($errors->all() as $error)
 										<li>* {{ $error }} </li>
 									@endforeach
-									<li>Intenta nuevamente.</li>
+									<li>Intente nuevamente.</li>
 								</ul>
 							</div>
 		                @endif

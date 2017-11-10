@@ -34,7 +34,7 @@
 
 					<div class="button_container">
 						<button type="submit" class="button green">Ingresar</button> <br />
-						<a class="link green small" href="{{ asset('password/reset') }}">¿Olvidaste tu contraseña?</a>
+						<a class="link green small" href="{{ asset('password/reset') }}">¿Olvidó su contraseña?</a>
 					</div>
 					
 					</form>

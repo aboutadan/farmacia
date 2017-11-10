@@ -70,8 +70,8 @@
 				            {{ place_input('email', 'Correo Electrónico', old('email', $details->email), array('type' => 'email')) }}
 
 				            <div class="col-xs-12 padTop-1">
-				                <p class="small">* En caso de no contar con alguno de estos datos, solo dejar el campo <strong>vacio</strong>. 
-				                Como buena practica, es sugerible obtener algun número de contact por si es necesario 
+				                <p class="small">* En caso de no contar con alguno de estos datos, deje el campo <strong>vacio</strong>. 
+				                Como buena práctica, es sugerible obtener algun número de contacto en caso de ser necesario 
 				                comunicarse con el paciente.</p>
 				            </div>
 				        </div>
@@ -93,8 +93,8 @@
 				            {{ place_textarea('alertas', 'Alertas', old('alertas', $details->alertas)) }}
 
 				            <div class="col-xs-12 pad-1">
-				                <p class="small">* El campos 'Alertas' estara disponible en al imprimir la receta medica. Debido a esto, el campo esta limitado a 100 caracteres.<br />
-				                * Datos estaran disponibles al crear receta medica.</p>
+				                <p class="small">* El campos 'Alertas' estará disponible en al imprimir la receta médica. Debido a esto, el campo esta limitado a 100 caracteres.<br />
+				                * Este dato estará disponibles al crear la receta médica.</p>
 				            </div>
 			        	</div>
 		        	</div>

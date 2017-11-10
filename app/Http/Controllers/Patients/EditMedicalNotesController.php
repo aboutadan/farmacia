@@ -94,7 +94,7 @@ class EditMedicalNotesController extends Controller {
 
        	if($update): 
        		$success = [
-       			'message' => 'Se logro actualizar la receta médica con exito!'
+       			'message' => 'Se logró actualizar la receta médica con éxito!'
        		];
        		return redirect('patient/details/'.$request->cliente_id)->with($success);
        	endif;

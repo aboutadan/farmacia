@@ -30,6 +30,7 @@
 	@yield('content')
     
 	<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script> {{-- Script provided by Laravel (includes jquery) --}}
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script> {{-- Bootstrap Script --}}
 	<script type="text/javascript" src="{{ asset('js/main.js') }}"></script> {{-- This is my custom js --}}
 	{{-- Custom Scripts --}}
 	@yield('custom_script')

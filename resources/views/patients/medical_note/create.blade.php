@@ -95,7 +95,7 @@
 									@foreach($errors->all() as $error)
 										<li>{{ $error }}</li>
 									@endforeach
-									<li> Intenta nuevamente. </li>
+									<li> Intente nuevamente. </li>
 								</ul>
 							@endif
 						</div>

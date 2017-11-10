@@ -118,7 +118,7 @@ class CreatePatientController extends Controller
 
             $message = [
                 'type' => 'danger', 
-                'message' => '¡Uh-oh! No se logro crear nuevo perfil, intenta nuevamente. Si el error continua favor de avisar al administrador.'
+                'message' => '¡Uh-oh! No se logró crear nuevo perfil, intente nuevamente. Si el error continua favor de avisar al administrador.'
             ];
 
             return redirect()->back()->with($message)->withInput();

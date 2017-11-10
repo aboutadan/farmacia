@@ -17,7 +17,7 @@
 	<div class="table banner" style="margin-top: 1cm;">
 		<div class="table-row">
 			<div class="table-cell image">
-				<img src="{{ realpath(__DIR__.'/../../..').'\public\images\IPN.png' }}" height="100%">
+				<img src="images/IPN.png" height="100%">
 			</div>
 			<div class="table-cell bottom">
 				<span class="title">Dra. Elizabeth Vargas Moreno</span><br />
@@ -30,7 +30,7 @@
 				Ce. Prof. 6687783
 			</div>
 			<div class="table-cell image">
-				<img src="{{ realpath(__DIR__.'/../../..'.'\public\images\esm.png') }}" height="100%">
+				<img src="images/esm.png" height="100%">
 			</div>
 		</div>
 	</div>
@@ -167,7 +167,7 @@
 		<div class="copy">COPIA</div>			
 		<div class="table-row">
 			<div class="table-cell image">
-				<img src="{{ realpath(__DIR__.'/../../..').'\public\images\IPN.png' }}" height="100%">
+				<img src="images/IPN.png" height="100%">
 			</div>
 			<div class="table-cell bottom">
 				<span class="title">Dra. Elizabeth Vargas Moreno</span><br />
@@ -180,7 +180,7 @@
 				Ce. Prof. 6687783
 			</div>
 			<div class="table-cell image">
-				<img src="{{ realpath(__DIR__.'/../../..'.'\public\images\esm.png') }}" height="100%">
+				<img src="images/esm.png" height="100%">
 			</div>
 		</div>
 	</div>

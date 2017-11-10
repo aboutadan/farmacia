@@ -19,7 +19,7 @@
 			@include('patients.profile.deactivate.warning')
 		@else
 			<div class="col-xs-12 center">
-                <h5>¿Estás seguro que quieres desactivar la cuenta de <strong> {{ $patient->nombre.' '.$patient->apellido }}</strong>?</h5>
+                <h5>¿Está seguro que quiere desactivar la cuenta de <strong> {{ $patient->nombre.' '.$patient->apellido }}</strong>?</h5>
                 <div class="col-xs-12 marTop-2 center">
                 	<form method="post" action="{{ Request::fullUrl().'/confirmed' }}">
 						{{ csrf_field() }}

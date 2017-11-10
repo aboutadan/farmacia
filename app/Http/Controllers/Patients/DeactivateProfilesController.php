@@ -45,7 +45,7 @@ class DeactivateProfilesController extends Controller
 		if($request->profileId === $id) {
 			$error = [
 				'type' => 'danger', 
-				'message' => '¡Uh-oh! El número de perfil que ingresaste tiene que ser diferente.'
+				'message' => '¡Uh-oh! El número de perfil que ingresó tiene que ser diferente.'
 			];
 			return redirect()->back()->with($error);
 		}
@@ -81,7 +81,7 @@ class DeactivateProfilesController extends Controller
 		} else {
 			$error = [
 				'type' =>  'danger', 
-				'message' => '¡Uh-oh! Algo salio mal, intenta nuevamente. Si el error persiste, avisa al administrador.'
+				'message' => '¡Uh-oh! Algo salió mal, intente nuevamente. Si el error persiste, avise al administrador.'
 			];
 			return redirect()->route('deactivate', $id)->with($error); 
 		}
@@ -107,7 +107,7 @@ class DeactivateProfilesController extends Controller
 			$error = [
 				'type' 		=> 'error',
 				'title'		=> '¡Uh-oh, algo salio mal!',
-				'message' 	=> 'No se logro desactivar el perfil de '.$patient->nombre.' '.$patient->apellido.', intenta nuevamente. Si el error persiste, avisar al administrador.',
+				'message' 	=> 'No se logró desactivar el perfil de '.$patient->nombre.' '.$patient->apellido.', intente nuevamente. Si el error persiste, avise al administrador.',
 				'url'		=> asset('patient/edit/'.$id), 
 				'redirect'  => true
 			];
@@ -131,7 +131,7 @@ class DeactivateProfilesController extends Controller
 
 		$error = [
 			'type' 		=> 'danger', 
-			'message' 	=> '¡Uh-oh, algo salio mal! Intenta nuevamente.'
+			'message' 	=> '¡Uh-oh, algo salió mal! Intente nuevamente.'
 		]; 
 
 		if($validator->fails()) return redirect('patient/edit/'.$id)->with($error);
@@ -159,7 +159,7 @@ class DeactivateProfilesController extends Controller
 			$error = [
 				'type' 		=> 'error',
 				'title'		=> '¡Uh-oh, algo salio mal!',
-				'message' 	=> 'No se logro desactivar el perfil de '.$patient->nombre.' '.$patient->apellido.', intenta nuevamente. Si el error persiste, avisar al administrador.',
+				'message' 	=> 'No se logró desactivar el perfil de '.$patient->nombre.' '.$patient->apellido.', intente nuevamente. Si el error persiste, avise al administrador.',
 				'url'		=> asset('patient/edit/'.$id), 
 				'redirect'  => true
 			];

@@ -67,7 +67,7 @@ class MedicalNoteController extends Controller
 	public function addComment(Request $request) {
 
 		$messages = [
-			'notas.required' => 'El campo \'Agregar Comentario\' es requerido. Intenta nuevamente.'
+			'notas.required' => 'El campo \'Agregar Comentario\' es requerido. Intente nuevamente.'
 		];
 
 		$validator = Validator::make($request->input(), [
@@ -87,7 +87,7 @@ class MedicalNoteController extends Controller
 
 		$insertComment->save();
 
-		return redirect()->back()->with('message', '¡Se agrego comentario con exito!');
+		return redirect()->back()->with('message', '¡Se agregó comentario con éxito!');
 
 	}
 
@@ -130,7 +130,7 @@ class MedicalNoteController extends Controller
 
 		$message = [
 			'type' => 'danger', 
-			'message' => 'No se logro cancelar la receta médica, intenta nueavmente. Si el error persiste, avisar al administrador.'
+			'message' => 'No se logró cancelar la receta médica, intente nueavmente. Si el error persiste, avise al administrador.'
 		];
 
 		if($validation->fails()) return redirect()->back()->with($message)->withErrors($validation);
@@ -156,7 +156,7 @@ class MedicalNoteController extends Controller
 		]);
 
 		if($update): 
-			$success = ['message' => '¡Se logro cancelar la receta médica con exito!'];
+			$success = ['message' => '¡Se logró cancelar la receta médica con éxito!'];
 			return redirect('patient/details/'.$id.'?status=1')->with($success);
 		else:
 			return redirect()->back()->with($message);
@@ -180,7 +180,6 @@ class MedicalNoteController extends Controller
 
 		$html = view('patients.medical_note.print', $data)->render();
 
-
 		$options = new Options;
 		$options->set('isHtml5ParserEnabled', true);
 
@@ -188,6 +187,6 @@ class MedicalNoteController extends Controller
 		$pdf->loadHtml($html);
 		$pdf->setPaper('letter', 'portrait');
 		$pdf->render();
-		$pdf->stream($file_name.'.pdf', ['Attachment' => true]);
+		$pdf->stream($file_name.'.pdf', ['Attachment' => false]);
 	}
 }

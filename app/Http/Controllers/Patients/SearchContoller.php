@@ -86,7 +86,7 @@ class SearchContoller extends Controller {
 		if($cliente->total() > 150 ) {
 			return redirect('search')
 					->back()
-					->withErrors(['error' => 'Se encontraron mas de 150 resultados. Intenta nuevamente.'])
+					->withErrors(['error' => 'Se encontraron mas de 150 resultados. Intente nuevamente.'])
 					->withInput();
 		}
 

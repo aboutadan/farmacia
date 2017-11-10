@@ -2,9 +2,9 @@
 	<div class="content">
 		<div class="col-xs-12 center padTop-3 padBot-3">
 			@if($status === 1)
-				¿Estas seguro que quieres cancelar esta receta?
+				¿Esta seguro que quiere cancelar esta receta?
 			@else
-				¿Estas seguro que quieres activar la receta de nuevo?
+				¿Esta seguro que quiere activar la receta de nuevo?
 			@endif
 
 			<div class="col-xs-12 pad-0 marTop-2">

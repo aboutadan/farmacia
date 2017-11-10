@@ -23,6 +23,7 @@
     @yield('content')
     
 	<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script> {{-- Bootstrap Script --}}
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 	{{-- Custom Scripts --}}
 	@yield('custom_script')

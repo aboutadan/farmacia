@@ -96,13 +96,13 @@ class EditProfilesController extends Controller
         if(!$update):
         	$updateErrorMessage = [
 	        	'type' => 'danger', 
-	        	'message'	=> '¡Uh-oh, algo salio mal! Intenta nuevamente. Si el error persiste, avisar al administrador.'
+	        	'message'	=> '¡Uh-oh, algo salió mal! Intente nuevamente. Si el error persiste, avise al administrador.'
 	        ];
         	return redirect()->back()->with($updateErrorMessage)->withInput();
         else:
             $success = [
                 'type' => 'success', 
-                'message' => '¡Se actualizo el perfil con éxito!'
+                'message' => '¡Se actualizó el perfil con éxito!'
             ];
         	return redirect('patient/details/'.$id.'?status=1')->with($success);
         endif;

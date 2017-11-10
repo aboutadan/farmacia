@@ -16,12 +16,12 @@ class DatabaseSeeder extends Seeder
 		DB::table('users')->insert([
 			'title' => 'Sr.',
 			'fname' => 'Adan', 
-			'lname' => 'Avilez', 
+			'lname' => 'Avilez Navarro', 
 			'email' => 'adan.avilez@gmail.com', 
 			'password' => bcrypt('sunvalley'),
 			'is_admin' => 1, 
 			'status' => 1
 		]);
-		
+				
     }
 }

@@ -14,7 +14,7 @@
 			Resultado
 			<div class="tool_tip quest">
                 <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                <span class="tooltext">A esta cuenta se asociaran las recetas y quedará como la cuenta principal.</span>
+                <span class="tooltext">A esta cuenta se asociarán las recetas y quedará como la cuenta principal.</span>
             </div>
 		</div>
 	    <div class="row form default">
@@ -64,7 +64,7 @@
             	</div>
 
 	            <div class="col-sm-12 marTop-1 center">
-	                <p>Si el perfil seleccionado es correcto, da clic en 'Confirmar y Desactivar'.</p>
+	                <p>Si el perfil seleccionado es correcto, de clic en 'Confirmar y Desactivar'.</p>
 	            </div>
 
 	            <div class="col-sm-12 marTop-1 center">
@@ -74,7 +74,7 @@
 	            		<input type="text" name="profileId" value="{{ $result->id }}" hidden>
 	                	<button type="submit" class="button green">Confirmar y Desactivar</button>
 	                </form>
-	                <p class="small marTop-2">* Este proceso no se podra modificar o corregir una vez que se realice el cambio.</p>
+	                <p class="small marTop-2">* Este proceso no se podrá modificar o corregir una vez que se realice el cambio.</p>
 	            </div>
 	        </div>                 
 	    </div>

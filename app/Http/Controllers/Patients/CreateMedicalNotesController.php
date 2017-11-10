@@ -129,7 +129,7 @@ class CreateMedicalNotesController extends Controller
 
        	if($save): 
        		$success = [
-       			'message' => 'Se logro agregar la consulta con exito!'
+       			'message' => 'Se logró agregar la consulta con éxito!'
        		];
        		return redirect('patient/details/'.$id)->with($success);
        	endif;

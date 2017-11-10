@@ -6,8 +6,8 @@
 
 	<div class="section">
 		<div class="row form title">
-			<div class="col-xs-12 col-sm-6 details">
-				<span class="small">Paciente</span>
+			<div class="col-xs-12 col-sm-6 details upper">
+				<span class="small" style="text-transform: capitalize;">Paciente</span>
 				{{ $patient->nombre.' '.$patient->apellido }}
 			</div>
 			<div class="col-xs-12 col-sm-6 details hidden-xs">

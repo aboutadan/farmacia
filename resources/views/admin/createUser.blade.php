@@ -63,8 +63,8 @@
 						{{ place_input('password_confirmation', 'Confirmar Contraseña', old('password_confirmation'), ['type' => 'password']) }}
 
 						<div class="col-sm-12 pad-0">
-							<p class="small">* La contraseña debe ser entre 6 y 30 caracteres.<br />
-							 				 * La contraseña debe tener al menos un número.</p>
+							<p class="small">* La contraseña debe contener entre 6 y 30 caracteres.<br />
+							 				 * La contraseña debe contener al menos un número.</p>
 						</div>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 								@foreach($errors->all() as $error)
 									<li>{{ $error }}</li>
 								@endforeach
-								<li>Intenta nuevamente.</li>
+								<li>Intente nuevamente.</li>
 							</ul>
 						</div>
 

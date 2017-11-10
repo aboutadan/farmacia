@@ -66,7 +66,7 @@ class LoginController extends Controller
             Session::put('branch' , $request->branch);
             return redirect()->intended('/search');
         } else {
-            return redirect()->back()->withErrors(['El usuario y la contraseña no coinciden, intenta nuevamente.'])->withInput($request->except('password'));
+            return redirect()->back()->withErrors(['El usuario y contraseña no coinciden, intente nuevamente.'])->withInput($request->except('password'));
         }
     }
 

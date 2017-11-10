@@ -3,14 +3,14 @@
 @section('title', 'Cambiar Contraseña')
 
 @section('content')
-	<div class="container">
+	<div class="container marTop-3">
 		@if(session('status'))
-            <div class="alert-success">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 alert-success">
                 {{ session('status') }}
             </div>
         @endif
 
-		<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 section_container marTop-3">
+		<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 section_container">
 			<div class="row form title">
 				Restablecer Contraseña
 			</div>
@@ -33,7 +33,7 @@
 							@endforeach
 						@else
 							<div class="col-xs-12 pad-0 marTop-1">
-								Ingresa tu correo electrónico para reestablecer tu contraseña.
+								Ingrese su correo electrónico para reestablecer su contraseña.
 							</div>
 						@endif
 
