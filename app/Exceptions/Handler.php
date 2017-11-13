@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\View;
 
 class Handler extends ExceptionHandler
 {
@@ -42,9 +43,18 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
-    {
-        return parent::render($request, $exception);
+    public function render($request, Exception $exception) {
+
+
+        // This will help return the correct error message view.
+        // In case no view is found, it will return the 500 error page as default.
+        $code = $exception->getCode();
+
+        if(View::exists('errors.'.$code)) return response()->view('errors.'.$code); 
+        else return response()->view('errors.500');
+
+        //return parent::render($request, $exception);
+        //return response()->view("errors.500", [], 500);
     }
 
     /**

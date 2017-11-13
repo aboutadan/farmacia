@@ -18,9 +18,9 @@
 					
 					{{ place_dropdown('branch', 'Sucursal', array('Tierra Arbolada', 'Séptimo Sol'), old('branch'), ['required' => true]) }}
 
-					{{ place_input('email', 'Email', old('email'), ['required' => true]) }}
+					{{ place_input('email', 'Email', old('email'), ['required' => true, 'autocomplete' => 'false']) }}
 
-					{{ place_input('password', 'Contraseña', '', array('type' => 'password', 'required' => true)) }}
+					{{ place_input('password', 'Contraseña', '', ['type' => 'password', 'required' => true, 'autocomplete' => 'false']) }}
 					
 					@if ($errors->any())
 					    <div class="col-xs-12 pad-0 marTop-1">
